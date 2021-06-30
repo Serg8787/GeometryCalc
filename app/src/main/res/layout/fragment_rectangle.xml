@@ -18,11 +18,12 @@
             android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_triangl"/>
 
         <TextView
             android:id="@+id/tvEnterData"
-            android:text="Введите данные"
+            android:text="@string/enter_data"
             style="@style/style_enter_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             tools:ignore="MissingConstraints"
+            android:baselineAligned="false"
             app:layout_constraintTop_toBottomOf="@+id/tvEnterData">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:hint="w :"
+                android:hint="@string/a"
                 android:layout_margin="5dp"
                 android:background="@drawable/shape_const"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +64,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:hint="l :"
+                android:hint="@string/b"
                 android:layout_margin="5dp"
                 android:background="@drawable/shape_const"
                 app:layout_constraintStart_toStartOf="parent"
@@ -96,8 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="5dp"
-                android:text="A = a * b"
-                android:textSize="25dp"
+                android:text="@string/calcAreaRect"
+                android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -134,7 +136,7 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="80dp"
                 android:padding="5dp"
-                android:text="P = 2 * (a + b)"
+                android:text="@string/calcPerimRect"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

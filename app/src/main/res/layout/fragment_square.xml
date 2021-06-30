@@ -18,7 +18,8 @@
             android:src="@drawable/areasquare"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/photo_square"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/shape_const"
-            android:hint="Введите параметр : a"
+            android:hint="@string/enter_a"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivSquare">
@@ -59,8 +60,8 @@
                 android:id="@+id/tvCalcAreaSquare"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="S = a * a"
-                android:textSize="25dp"
+                android:text="@string/area_square"
+                android:textSize="25sp"
                 android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
@@ -103,7 +104,7 @@
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="P = 4 * a"
+                android:text="@string/calc_per_square"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.524"
