@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.geometrycalc.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentSquare"
+            app:destination="@id/fragmentSquare" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentTriangle"
+            app:destination="@id/fragmentTriangle" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentRectangle"
+            app:destination="@id/fragmentRectangle" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRectangle"
+        android:name="com.example.geometrycalc.FragmentRectangle"
+        android:label="fragment_rectangle"
+        tools:layout="@layout/fragment_rectangle" >
+        <action
+            android:id="@+id/action_fragmentRectangle_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTriangle"
+        android:name="com.example.geometrycalc.FragmentTriangle"
+        android:label="fragment_triangle"
+        tools:layout="@layout/fragment_triangle" >
+        <action
+            android:id="@+id/action_fragmentTriangle_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSquare"
+        android:name="com.example.geometrycalc.FragmentSquare"
+        android:label="fragment_square"
+        tools:layout="@layout/fragment_square" >
+        <action
+            android:id="@+id/action_fragmentSquare_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
